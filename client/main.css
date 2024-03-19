@@ -1,4 +1,84 @@
-body {
-  padding: 10px;
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family:"Poppins", sans-serif !important ;
+  background-color: #F7F4F4 !important;
 }
+figure.snip1253 {
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  max-width: 410px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1253 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+figure.snip1253 .image {
+  max-height: 220px;
+  overflow: hidden;
+}
+figure.snip1253 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+figure.snip1253 figcaption {
+  margin: -40px 15px 0;
+  padding: 15px ;
+  position: relative;
+  background-color: #ffffff;
+}
+
+figure.snip1253 h3,
+figure.snip1253 p {
+  margin: 0;
+  padding: 0;
+}
+figure.snip1253 h3 {
+  min-height: 50px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+figure.snip1253 p {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+figure.snip1253 footer {
+  padding: 0 25px;
+  color: #000000;
+  font-size: 0.8em;
+  line-height: 30px;
+  text-align: center;
+}
+figure.snip1253 footer > div {
+  display: inline-block;
+  margin-left: 10px;
+}
+figure.snip1253 footer i {
+  color: #000000;
+  margin-right: 5px;
+}
+figure.snip1253:hover img,
+figure.snip1253.hover img {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+/*media queries */
+@media screen and (min-width: 900px) {
+  .mobile-navbar{
+    display: none !important;
+  }
+}
+/*media queries */
