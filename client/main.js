@@ -6,7 +6,8 @@ import 'font-awesome/css/font-awesome.css';
 
 import '../ui/components/shared/navbar';
 import '../ui/components/shared/footer';
-import '../ui/components/newscard.html'
+import '../ui/components/newscard.html';
+import '../ui/components/trendingcard.html';
 import './main.html';
 
 
