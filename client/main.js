@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 
 import '../ui/components/navbar';
+import '../ui/components/footer';
 import './main.html';
 
 
