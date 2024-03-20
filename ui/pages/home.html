@@ -1,0 +1,57 @@
+<template name="home">
+  {{> trendingcard}}
+  <!--breaking news-->
+  <div
+    class="container my-5"
+    style="background-color: #c31815; height: auto; color: #fff"
+  >
+    <div class="d-flex justify-content-center p-3">
+      <div
+        class="p-2 my-auto text-center"
+        style="background-color: #fff; color: #c31815"
+      >
+        Breaking News
+      </div>
+      <div class="mx-5 p-2">
+        <marquee
+          direction="right"
+          onmouseover="this.stop();"
+          onmouseout="this.start();"
+          >This text will scroll from bottom to top</marquee
+        >
+      </div>
+    </div>
+  </div>
+  <!-- breaking news-->
+  <!--news card-->
+  <div class="container">
+    <div
+      class="d-flex justify-content-between p-3"
+      style="background-color: #fff"
+    >
+      <div class="mt-2">
+        <span class="mx-3">Latest Stories</span>
+        <span class="mx-3">Health</span>
+        <span class="mx-3">Sports</span>
+      </div>
+      <div>
+        <select class="form-select">
+          <option selected>Ülke Seçiniz</option>
+          <option value="tr">Türkiye</option>
+          <option value="en">İngiltere</option>
+          <option value="ru">Rusya</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">{{>newscard}}</div>
+    <div class="w-100 text-center my-4">
+      <button class="btn btn-outline-danger rounded-0 py-4 px-5">
+        VIEW MORE
+      </button>
+    </div>
+  </div>
+  <!-- news card-->
+  <!--slider gelecek-->
+
+  <!--slider gelecek-->
+</template>

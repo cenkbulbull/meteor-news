@@ -8,8 +8,11 @@ import '../ui/components/shared/navbar';
 import '../ui/components/shared/footer';
 import '../ui/components/newscard.html';
 import '../ui/components/trendingcard.html';
+
 import './main.html';
 
+
+import '../lib/router/routes'
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0

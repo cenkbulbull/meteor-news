@@ -2,17 +2,20 @@
   <title>news</title>
 </head>
 
-<body>
-  {{> navbar}}
-  {{> footer}}
-  <!--<h1>Welcome to Meteor!</h1>
-  <button class="btn btn-success">
-    <i class="fa-solid fa-envelope"></i> <i class="fas fa-rocket"></i>
-    test
-  </button>
-
-  {{> hello}} {{> info}}-->
-</body>
+<template name="App_body">
+  <body>
+    {{> navbar}}
+    {{> Template.dynamic template=content}}
+    {{> footer}}
+    <!--<h1>Welcome to Meteor!</h1>
+    <button class="btn btn-success">
+      <i class="fa-solid fa-envelope"></i> <i class="fas fa-rocket"></i>
+      test
+    </button>
+  
+    {{> hello}} {{> info}}-->
+  </body>
+</template>
 
 <!--<template name="hello">
   <button>Click Me</button>
