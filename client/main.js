@@ -4,8 +4,9 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 
-import '../ui/components/navbar';
-import '../ui/components/footer';
+import '../ui/components/shared/navbar';
+import '../ui/components/shared/footer';
+import '../ui/components/newscard.html'
 import './main.html';
 
 
