@@ -2,7 +2,7 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.css';
+import '@fortawesome/fontawesome-free/js/all.js'
 
 import '../ui/components/shared/navbar';
 import '../ui/components/shared/footer';
