@@ -1,0 +1,238 @@
+<template name="newsdetail">
+  <!-- top title detail-->
+  <div>
+    <div
+      class="container-fluid d-flex align-items-center"
+      style="background-color: #0e1e32; color: #fff; height: 300px"
+    >
+      <h4 class="mx-auto text-center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi,
+        possimus!
+      </h4>
+    </div>
+    <div
+      class="container d-flex justify-content-center"
+      style="margin-top: -70px"
+    >
+      <img
+        src="https://picsum.photos/seed/picsum/200/300"
+        style="width: 100%; height: 70vh"
+      />
+    </div>
+    <div class="container pt-5">
+      <span>12 hours ago</span>
+      <div class="row">
+        <div class="col-12 col-md-8 position-relative">
+          <p>
+            Crowds watched solemnly as the body of Rep. John Lewis crossed the
+            Edmund Pettus Bridge one final time, 55 years after the civil rights
+            icon marched for peace and was met with brutality in Selma, Alabama.
+            Body bearers from the U.S. armed forces placed the late Georgia
+            congressman and civil rights icon onto a horse-drawn caisson Sunday
+            at the Brown Chapel African Methodist Episcopal Church. From there,
+            the public were allowed to line up to honor Lewis for about a
+            half-mile to the foot of the bridge. Rep. Terri Sewell, D-Al.,
+            thanked Lewis’ family during a ceremony at the chapel for sharing
+            the congressman with the public for so many years. “Our nation is
+            better off because of John Robert Lewis,” she remarked. “My life is
+            better, Selma is better, this nation and this world is better
+            because of John Robert Lewis.”
+          </p>
+          <!--newsletter-->
+          <div
+            class="col-12 my-5 border-top border-5 border-dark p-5 shadow"
+            style="background-color: #fff"
+          >
+            <div class="row d-flex flex-column flex-wrap">
+              <h5>Sign up for The NBC News Newsletter</h5>
+              <p>By Caroline Casey</p>
+              <p>
+                A weekly, ad-free newsletter that helps 786,000+ readers stay in
+                the know, be productive, and think more critically about the
+                world. Take a look
+              </p>
+              <button class="btn btn-danger py-3 col-lg-6 col-md-12 rounded-0">
+                <i class="fa-regular fa-envelope"></i> GET THIS NEWSLETTER
+              </button>
+            </div>
+          </div>
+          <!--newsletter-->
+
+          <!--text-->
+          <div
+            class="border border-1 border-danger border-start-0 border-end-0 p-4 my-5"
+          >
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              saepe accusamus delectus voluptatem dolores at corporis distinctio
+              ab animi Lorem ipsum dolor sit amet .
+            </h5>
+          </div>
+          <!--text-->
+
+          <!--badges-->
+          <div class="my-5">
+            <span
+              class="badge p-2 px-3 rounded-5 m-2"
+              style="
+                background-color: #f6dddc !important;
+                color: #f9736f !important;
+              "
+              >NBCBLACK</span
+            >
+            <span
+              class="badge p-2 px-3 rounded-5 m-2 ms-3"
+              style="
+                background-color: #f6dddc !important;
+                color: #f9736f !important;
+              "
+              >TRENDING</span
+            >
+            <span
+              class="badge p-2 px-3 rounded-5 m-2 ms-3"
+              style="
+                background-color: #f6dddc !important;
+                color: #f9736f !important;
+              "
+              >LEWIS</span
+            >
+            <span
+              class="badge p-2 px-3 rounded-5 m-2 ms-3"
+              style="
+                background-color: #f6dddc !important;
+                color: #f9736f !important;
+              "
+              >FREEBIE</span
+            >
+          </div>
+          <!--badges-->
+
+          <div class="position-absolute bottom-0" style="font-size: 25px">
+            <i class="fa-regular fa-heart"></i>
+            <span style="font-size: 12px">30</span>
+            <i class="fa-regular fa-comment ms-4"></i>
+            <span style="font-size: 12px">6</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h5>Tavsiye Edilenler</h5>
+          {{>newscard}}
+        </div>
+      </div>
+
+      <!--author card-->
+      <div class="col-12 col-md-8 border-top p-3 my-3">
+        <div class="row d-flex flex-wrap mt-4">
+          <img
+            class="rounded-circle col-6 col-md-2"
+            src="https://picsum.photos/seed/picsum/200"
+            width="120"
+            height="120"
+          />
+          <div class="d-flex flex-column mx-4 col-12 col-md-6">
+            <p>Author ismi</p>
+            <p style="font-size: 13px">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+              quia assumenda delectus deleniti quaerat hic et reiciendis vero
+              eveniet error nobis accusantium est quasi obcaecati, laudantium,
+              beatae unde magnam aspernatur?
+            </p>
+          </div>
+          <button
+            class="btn btn-outline-danger rounded-0 px-2 py-3 col-12 col-md-3"
+            style="height: 60px"
+          >
+            <i class="fa-brands fa-twitter"></i> FOLLOW
+          </button>
+        </div>
+      </div>
+      <!--author card-->
+    </div>
+
+    <!--related topics-->
+    <div class="container mb-5">
+      <div class="row">
+        <h5>İlgili Haberler</h5>
+        <div class="col-12 col-md-3">
+          <figure class="snip1253 col-3">
+            <div class="image">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg"
+              />
+            </div>
+            <div>
+              <h4 class="p-4">İlgili Başka haber(üzerine tıklanınca gönder)</h4>
+              <hr />
+              <footer>
+                <div class="views">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>928
+                </div>
+                <div class="love"><i class="fa-solid fa-heart"></i>198</div>
+              </footer>
+            </div>
+          </figure>
+        </div>
+        <div class="col-12 col-md-3">
+          <figure class="snip1253 col-3">
+            <div class="image">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg"
+              />
+            </div>
+            <div>
+              <h4 class="p-4">İlgili Başka haber(üzerine tıklanınca gönder)</h4>
+              <hr />
+              <footer>
+                <div class="views">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>928
+                </div>
+                <div class="love"><i class="fa-solid fa-heart"></i>198</div>
+              </footer>
+            </div>
+          </figure>
+        </div>
+        <div class="col-12 col-md-3">
+          <figure class="snip1253 col-3">
+            <div class="image">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg"
+              />
+            </div>
+            <div>
+              <h4 class="p-4">İlgili Başka haber(üzerine tıklanınca gönder)</h4>
+              <hr />
+              <footer>
+                <div class="views">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>928
+                </div>
+                <div class="love"><i class="fa-solid fa-heart"></i>198</div>
+              </footer>
+            </div>
+          </figure>
+        </div>
+        <div class="col-12 col-md-3">
+          <figure class="snip1253 col-3">
+            <div class="image">
+              <img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg"
+              />
+            </div>
+            <div>
+              <h4 class="p-4">İlgili Başka haber(üzerine tıklanınca gönder)</h4>
+              <hr />
+              <footer>
+                <div class="views">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>928
+                </div>
+                <div class="love"><i class="fa-solid fa-heart"></i>198</div>
+              </footer>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!--related topics-->
+  </div>
+  <!-- top title detail-->
+</template>
