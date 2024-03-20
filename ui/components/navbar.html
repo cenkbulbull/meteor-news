@@ -1,0 +1,108 @@
+<template name="navbar">
+  <!--navbar-->
+  <nav class="navbar navbar-expand-md bg-light">
+    <div class="container-fluid d-flex flex-column">
+      <div class="collapse navbar-collapse" style="font-size: 12px">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/src/logo.png" width="60" height="48" />
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Politics</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">World</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Travel</a>
+          </li>
+          <li class="nav-item mx-3">
+            <div class="d-flex" style="font-size: 18px">
+              <input class="form-control" type="text" placeholder="Ara" />
+              <button class="btn">
+                <i class="fa-solid fa-magnifying-glass mx-3"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--navbar-->
+  <!--mobile navbar-->
+  <nav class="navbar mobile-navbar bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/src/logo.png" width="60" height="48" />
+      </a>
+      <div
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        style="font-size: 20px"
+      >
+        <i class="fa-solid fa-bars mx-3"></i>
+      </div>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <ul class="navbar-nav mt-3">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <hr />
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Politics</a>
+          </li>
+          <hr />
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+          <hr />
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <hr />
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">World</a>
+          </li>
+          <hr />
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Travel</a>
+          </li>
+          <hr />
+          <li class="nav-item mx-3">
+            <div class="d-flex" style="font-size: 18px">
+              <input class="form-control" type="text" placeholder="Ara" />
+              <button class="btn btn-outline-success">
+                <i class="fa-solid fa-magnifying-glass mx-3"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--mobile navbar-->
+</template>

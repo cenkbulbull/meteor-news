@@ -4,7 +4,9 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 
+import '../ui/components/navbar';
 import './main.html';
+
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
