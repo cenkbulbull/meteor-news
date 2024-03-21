@@ -11,6 +11,7 @@ figure.snip1253 {
   margin: 10px 1%;
   max-width: 410px;
   width: 100%;
+  height: 529px;
   background-color: #ffffff;
   color: #000000;
   text-align: left;
@@ -31,12 +32,15 @@ figure.snip1253 img {
   max-width: 100%;
   vertical-align: top;
   position: relative;
+  width: 100%;
 }
 figure.snip1253 figcaption {
   margin: -40px 15px 0;
   padding: 15px ;
   position: relative;
   background-color: #ffffff;
+  overflow-y: scroll !important;
+  height: 60%;
 }
 
 figure.snip1253 h3,
@@ -55,6 +59,9 @@ figure.snip1253 p {
   line-height: 1.6em;
 }
 figure.snip1253 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 0 25px;
   color: #000000;
   font-size: 0.8em;
@@ -82,3 +89,16 @@ figure.snip1253.hover img {
   }
 }
 /*media queries */
+
+/*scrool style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  /* scrool background empty */
+}
+/*scrool style */
