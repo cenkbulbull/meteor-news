@@ -30,11 +30,11 @@
       style="background-color: #fff"
     >
       <div class="mt-2">
-        <span class="mx-3">Kategori ismi</span>
+        <span class="mx-3">{{getCategoryName}}</span>
       </div>
       <div>
-        <select class="form-select">
-          <option selected>Ülke Seçiniz</option>
+        <select class="country-select form-select">
+          <option selected value="tr">Ülke Seçiniz</option>
           <option value="tr">Türkiye</option>
           <option value="en">İngiltere</option>
           <option value="ru">Rusya</option>
@@ -43,11 +43,19 @@
       </div>
     </div>
     <div class="row">
-      {{>newscard}}
+      {{#if isLoading}}
+      <!-- Yükleme göstergesi -->
+      <div class="alert alert-primary mt-3">Yükleniyor...</div>
+      {{else}}
+      <!-- Veri yüklendikten sonra gösterilecek içerik -->
+        {{#each data}} 
+          {{>newscard news=this}} 
+        {{/each}}
+      {{/if}}
     </div>
     <div class="w-100 text-center my-4">
-      <button class="btn btn-outline-danger rounded-0 py-4 px-5">
-        VIEW MORE
+      <button class="nextpage btn btn-outline-danger rounded-0 py-4 px-5">
+        NEXT PAGE
       </button>
     </div>
   </div>
