@@ -1,13 +1,10 @@
 import { Meteor } from "meteor/meteor";
 Meteor.methods({
-  getNews: function (page = "0") {
-    console.log(page);
+  getNewsLocal: function (city) {
     try {
       const result = HTTP.call(
         "GET",
-        Meteor.settings.API_URL +
-          "/getNews?country=tr&tag=general&paging=" +
-          page,
+        Meteor.settings.API_URL + "/getNewsLocal?city=" + city,
         {
           headers: {
             "Content-Type": "application/json", // İstek başlığı
