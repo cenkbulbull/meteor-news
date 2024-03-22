@@ -20,6 +20,8 @@ import "../lib/router/routes";
 import "./template/home";
 import "./template/newscategory";
 import "./template/newsdetail";
+import "./template/newscard";
+import "./template/trendingcard";
 
 Template.navbar.events({
   "click .search-city"(event,instance) {
