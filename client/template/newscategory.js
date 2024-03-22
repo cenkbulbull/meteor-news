@@ -51,9 +51,11 @@ Template.newscategory.events({
   'change .country-select'(event) {
     const instance = Template.instance();
     const category = FlowRouter.getParam('_category') || "general";
+    instance.page.set(0);
     const currentPage = instance.page.get();
-    const newCountry = instance.country.set(event.target.value)
-    Meteor.call('getFilteredNews', currentPage,category,newCountry, (error, result) => {
+    instance.country.set(event.target.value)
+    const country = instance.country.get()
+    Meteor.call('getFilteredNews', currentPage,category,country, (error, result) => {
       if (error) {
         console.log(error);
       } else {
@@ -68,7 +70,8 @@ Template.newscategory.events({
     const currentPage = instance.page.get();
     instance.page.set(currentPage + 1);
     const newpage = instance.page.get();
-    Meteor.call("getFilteredNews",newpage,category, (error, result) => {
+    const country = instance.country.get()
+    Meteor.call("getFilteredNews",newpage,category,country, (error, result) => {
       if (error) {
         console.log(error);
       } else {

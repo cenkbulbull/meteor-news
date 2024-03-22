@@ -9,6 +9,7 @@ Template.home.onCreated(function () {
   instance.newsdata = new ReactiveVar(null);
   instance.loading = new ReactiveVar(true);
   instance.page = new ReactiveVar(0);
+  instance.country = new ReactiveVar("tr")
 
   Meteor.call("getNews", (error, result) => {
     if (error) {
@@ -38,8 +39,13 @@ Template.home.events({
   "change .country-select"(event) {
     const instance = Template.instance();
     const category = FlowRouter.getParam("_category") || "general";
-    const country = event.target.value;
-    Meteor.call("getFilteredNews", category, country, (error, result) => {
+    instance.page.set(0);
+    const currentPage = instance.page.get();
+    instance.country.set(event.target.value)
+    const country = instance.country.get()
+    
+    console.log("currentpage-->"+ currentPage + " country-->"+country)
+    Meteor.call("getFilteredNews", currentPage, category, country, (error, result) => {
       if (error) {
         console.log(error);
       } else {
@@ -51,9 +57,11 @@ Template.home.events({
   "click .nextpage"(event) {
     const instance = Template.instance();
     const currentPage = instance.page.get();
+    const category = FlowRouter.getParam("_category") || "general";
     instance.page.set(currentPage + 1);
     const newpage = instance.page.get();
-    Meteor.call("getNews",newpage, (error, result) => {
+    const country = instance.country.get()
+    Meteor.call("getFilteredNews",newpage,category,country, (error, result) => {
       if (error) {
         console.log(error);
       } else {
