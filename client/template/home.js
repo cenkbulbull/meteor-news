@@ -72,4 +72,19 @@ Template.home.events({
       }
     });
   },
+  "click .rss-btn"(event) {
+    const instance = Template.instance();
+    const rssbtn = event.currentTarget;
+    const rssinput = rssbtn.previousElementSibling.value;
+    Meteor.call("getNewsFromRss", rssinput ,(error, result) => {
+      if (error) {
+        console.log(error);
+      } else {
+        /*instance.newsdata.set(result.data.result)
+        console.log(this.newsdata);*/
+        console.log(result)
+        alert("CollectAPI, getNewsFromRss endpointinde parametre hatası vermektedir. Hata Mesajı  "+ result.content)
+      }
+    });
+  },
 });
